@@ -20,6 +20,7 @@ body{
     position: relative;
 }
 .bg-img{
+    max-height: 500px;
     opacity: 0.5;
 }
 .bg-text{ 
