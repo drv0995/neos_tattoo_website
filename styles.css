@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(19, 19, 19);
+}
+.navbar{
+    background-color: #161616;
+    position:absolute;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-brand{
+    color: rgb(255, 255, 255);
+}
+.navbar-nav .nav-link{
+    color: rgb(255, 255, 255);
+}
+.navbar-toggler {
+    border-color: rgb(59, 59, 59); /* Para eliminar el borde si lo deseas */
+}
+.container-fluid{
+    position: relative;
+}
+.bg-img{
+    opacity: 0.5;
+}
+.bg-text{ 
+    position: absolute;
+}
+.bg-text h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+h2{
+    padding-top: 30px;
+    padding-inline: 30px;
+    color: aliceblue;
+}
+h3{
+    padding-top: 30px;
+    padding-inline: 30px;
+    color: aliceblue;
+    font-size: medium;
+}
+p{
+    padding-inline: 30px;
+    padding-block: 30px;
+    color: #7d7d7d;
+}
+.card-full{
+    background-color: rgba(74, 74, 74, 0.473)
+}
+.card-right h2,p{
+    text-align: right;
+}
+.card-left h2,p{
+    text-align: left;
+}
