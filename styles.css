@@ -1,57 +1,59 @@
-body{
-    background-color: rgb(19, 19, 19);
+/*GENERAL
+    transform: translate(-50%,-50%);/*coloca el punto de referencia al centro*/
+:root {
+    --primary-color: #161616;
+    --secondary-color: #4a4a4a;
+    --accent-color: #ffffff;
+    --text-color: #7d7d7d;
+    --heading-color: aliceblue;
+    --background-color: rgb(0, 0, 0);
+    --navbar-height: 60px;
 }
-.navbar{
-    background-color: #161616;
-    position:absolute;
-    width: 100%;
-    z-index: 1;
-}
-.navbar-brand{
-    color: rgb(255, 255, 255);
-}
-.navbar-nav .nav-link{
-    color: rgb(255, 255, 255);
-}
-.navbar-toggler {
-    border-color: rgb(59, 59, 59); /* Para eliminar el borde si lo deseas */
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif; /* Cambiar por alguna fuente personalizada si lo deseas */
 }
 .container-fluid{
+    padding: 0;
+}
+
+
+
+/*NAV*/
+.navbar {
+    background-color: var(--primary-color);
+    width: 100%;
+    z-index: 1;
+    height: var(--navbar-height);
+}
+
+.navbar-brand, 
+.navbar-nav .nav-link {
+    color: var(--accent-color);
+}
+
+
+/*BACKGROUND INDEX-TOP*/
+#bg {
     position: relative;
 }
-.bg-img{
-    max-height: 500px;
-    opacity: 0.5;
+#bg-img{
+    
 }
-.bg-text{ 
-    position: absolute;
-}
-.bg-text h1{
+
+#bg-text{
     text-align: center;
-    color: rgb(255, 255, 255);
-}
-h2{
-    padding-top: 30px;
-    padding-inline: 30px;
+    padding: 2rem;
     color: aliceblue;
+    transform: translate(-50%,-50%);/*coloca el punto de referencia al centro*/
+    width: 100%;
+    background-color: #16161664;
+
+    /*Position ABSOLUT FROM RELATIVE*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
 }
-h3{
-    padding-top: 30px;
-    padding-inline: 30px;
-    color: aliceblue;
-    font-size: medium;
-}
-p{
-    padding-inline: 30px;
-    padding-block: 30px;
-    color: #7d7d7d;
-}
-.card-full{
-    background-color: rgba(74, 74, 74, 0.473)
-}
-.card-right h2,p{
-    text-align: right;
-}
-.card-left h2,p{
-    text-align: left;
-}
+
