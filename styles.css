@@ -1,23 +1,28 @@
 /*GENERAL
     transform: translate(-50%,-50%);/*coloca el punto de referencia al centro*/
 :root {
-    --primary-color: #161616;
-    --secondary-color: #4a4a4a;
-    --accent-color: #ffffff;
+    --primary-color: #1c1c1c;
+    --secondary-color: #4d4d4d;
+    --background-color: rgb(16, 16, 16);
+    --nav-text-color: #ffffff;
     --text-color: #7d7d7d;
+    --text-secundary-color:#ff9dd8 ;
     --heading-color: aliceblue;
-    --background-color: rgb(0, 0, 0);
-    --navbar-height: 60px;
 }
 
 body {
     background-color: var(--background-color);
-    font-family: 'Arial', sans-serif; /* Cambiar por alguna fuente personalizada si lo deseas */
+    font-family: 'Urbanist','Arial', sans-serif; /* Cambiar por alguna fuente personalizada si lo deseas */
 }
+
+
 .container-fluid{
     padding: 0;
 }
 
+span{
+    color: var(--text-secundary-color);
+}
 
 
 /*NAV*/
@@ -26,20 +31,27 @@ body {
     width: 100%;
     z-index: 1;
     height: var(--navbar-height);
+    padding-left: 1rem;
 }
 
-.navbar-brand, 
-.navbar-nav .nav-link {
-    color: var(--accent-color);
+.navbar-brand,
+.nav-link {
+    color: var(--nav-text-color);
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: var(--text-secundary-color);
 }
 
 
 /*BACKGROUND INDEX-TOP*/
 #bg {
     position: relative;
+    height: 30rem;
+    overflow: hidden;
 }
-#bg-img{
-    
+#bg-img{ 
 }
 
 #bg-text{
@@ -57,3 +69,40 @@ body {
 
 }
 
+section{
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/*Secciones*/
+section p{
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#our-clients p{
+    margin-top: 1rem;
+}
+
+iframe{
+    width: 400px;
+    height: 250px;
+}
+
+section img{
+    border-radius: 10px;
+    margin-block: 0.5rem;
+}
+
+
+/*Footer*/
+footer{
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding: 0.2rem;
+
+}
