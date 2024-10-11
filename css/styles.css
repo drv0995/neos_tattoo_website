@@ -8,6 +8,9 @@
     --text-color: #7d7d7d;
     --text-secundary-color:#ff9dd8 ;
     --heading-color: aliceblue;
+
+    --text-dani: rgb(255, 175, 222);
+    --text-drv: rgb(0, 114, 137);
 }
 
 body {
@@ -78,7 +81,7 @@ section{
 }
 
 /*Secciones*/
-section p{
+.parrafo-index{
     margin-top: 3rem;
     font-size: 1.2rem;
     font-weight: 400;
@@ -105,4 +108,24 @@ footer{
     background-color: var(--primary-color);
     padding: 0.2rem;
 
+}
+
+/*Artistas*/
+#card-dani{
+    color: var(--text-dani);
+}
+#card-drv h2{
+    color: var(--text-drv);
+}
+
+#title-art{
+    color: var(--text-color);
+    margin: 1rem 0 0 0;
+    text-align: center;
+    font-size: 5rem;
+}
+.art-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
