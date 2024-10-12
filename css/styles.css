@@ -17,7 +17,11 @@ body {
     background-color: var(--background-color);
     font-family: 'Urbanist','Arial', sans-serif; /* Cambiar por alguna fuente personalizada si lo deseas */
 }
-
+a{
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    font-weight: 400;
+}
 
 .container-fluid{
     padding: 0;
@@ -55,6 +59,8 @@ span{
     overflow: hidden;
 }
 #bg-img{ 
+    height: auto;
+    width: 100%;
 }
 
 #bg-text{
@@ -99,7 +105,18 @@ section img{
     border-radius: 10px;
     margin-block: 0.5rem;
 }
+.artistas-index{
+    padding-left: 3rem;
 
+
+}
+.redes{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.redes:hover{
+    color: var(--text-dani);
+}
 
 /*Footer*/
 footer{
@@ -110,10 +127,21 @@ footer{
 
 }
 
-/*Artistas*/
+/*Artistas************************************************************/
+.img-text-art{
+    width: 95%;
+    display: inline-flex;
+}
+
+.img-text-art img{
+    width: 10rem;
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
 #card-dani{
     color: var(--text-dani);
 }
+
 #card-drv h2{
     color: var(--text-drv);
 }
@@ -122,10 +150,41 @@ footer{
     color: var(--text-color);
     margin: 1rem 0 0 0;
     text-align: center;
-    font-size: 5rem;
+
 }
 .art-text{
+    padding-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+
+
+
+@media (max-width: 768px){
+
+    /*Fondo del Index*/
+    #bg-img{ 
+        object-fit:cover;
+        height: 100%;
+    }
+
+    /*Fondo del Index*/
+    iframe{
+        object-position: center;
+        width: 100%;
+        height:auto ;
+    }
+    .ubicacion{
+        margin-top: 2rem;
+    }
+    /*Fotos Artistas*/
+    .img-text-art{
+        width: fit-content;
+        display: block;
+        text-align: center;
+    }
+   
 }
